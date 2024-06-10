@@ -35,9 +35,13 @@ public class DivisionWithoutOperator {
         }
 
     public static void main(String[] args) {
-        System.out.println(division(-14, 5));
+        System.out.println(division(1567, 45));
     }
 
 
     }
+
+    /*
+    Write a method that can divide two numbers without using division operator
+     */
 

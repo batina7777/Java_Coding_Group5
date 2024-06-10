@@ -10,5 +10,13 @@ public class ReverseStringClass {
         }
         System.out.println(reversed);
 
+        System.out.println("---------------------------------------");
+
+        String name2 = "hello";
+        StringBuilder reversed2 = new StringBuilder(name2).reverse();
+        String result = reversed2.toString();
+        System.out.println(result); // "olleh"
+
+
     }
 }
