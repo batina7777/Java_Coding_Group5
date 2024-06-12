@@ -1,6 +1,4 @@
-package Batina.week1;
-
-import javax.swing.*;
+package Batina.week3;
 
 //Numbers -- PrimeNumber
 //Write a method that can check if a number is prime or not

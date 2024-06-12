@@ -1,4 +1,4 @@
-package Batina.week1;
+package Batina.week2;
 
 /*
  Numbers -- print consecutive numbers
