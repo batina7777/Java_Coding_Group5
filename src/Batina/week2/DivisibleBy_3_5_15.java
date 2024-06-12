@@ -1,4 +1,4 @@
-package Batina.week1;
+package Batina.week2;
 
 /*
 Numbers -- Divisible by 3, 5, 15
