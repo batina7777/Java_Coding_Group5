@@ -9,24 +9,29 @@ input: -35  output: -53
 
 public class ReverseNegativeNumbers {
     public static void main(String[] args) {
-        int num = -109;
-        int reversedNumber = reverseNegativeNumber(num);
-        System.out.println("Reversed number: " + reversedNumber);
+        int output = reverseNegative(-100);
+
+        System.out.println(output);
+
     }
 
-    public static int reverseNegativeNumber(int num) {
-       /* boolean isNegative = num < 0;
-        if (isNegative) {
-            num *= -1;
-        }
-*/
-        int reversed = 0;
-        while (num < 0) {
-            int digit = num % 10;
-            reversed = reversed * 10 + digit;
-            num /= 10;
+    static int reverseNegative(int num) {
+
+        String numString = String.valueOf(num);
+        String result = "-";
+        int digitNum = -1;
+
+        for (char eachChar : numString.toCharArray()) {
+            digitNum++;
         }
 
-        return reversed; //isNegative ? reversed * -1 : reversed;
+        for (int i = digitNum; i > 0; i--) {
+            result += numString.charAt(i);
+        }
+
+        return Integer.parseInt(result);
+
     }
-}
+
+
+    }
