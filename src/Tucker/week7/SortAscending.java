@@ -7,7 +7,9 @@ public class SortAscending {
 
         int[] arr = {10, 9, 8, 7};
         int[] arr2 = {564, 700, 65, 1, 0, 34, 155};
-
+/*
+NOT OPERATIONAL --> Needs to be looked over
+ */
     }
 
     public static int[] sortAscending(int[] array){
