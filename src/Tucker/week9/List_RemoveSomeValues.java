@@ -16,7 +16,11 @@ public class List_RemoveSomeValues {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 101, 200, 300};
 
+        int[] arr2 = {85, 1, 200, 110, 430, 1000000, 5, 43, 100, 5};
+
         System.out.println("removeUnderHundred(arr) = " + removeUnderHundred(arr));
+
+        System.out.println("removeUnderHundred(arr2) = " + removeUnderHundred(arr2));
 
     }
 
@@ -27,7 +31,7 @@ public class List_RemoveSomeValues {
             List<Integer> listToBeReturn = new ArrayList<>();
 
             for (int each : useInt){
-                if(each >= 100){
+                if(each <= 100){
                     listToBeReturn.add(each);
                 }
             }
