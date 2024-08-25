@@ -1,5 +1,7 @@
 package Tucker.week7;
 
+import java.util.Arrays;
+
 public class FindMinimum {
 
     public static void main(String[] args){
@@ -21,6 +23,11 @@ public class FindMinimum {
             }
         }
 return min;
+    }
+
+    public static int minNum2(int[] arr){
+        Arrays.sort(arr);
+        return arr[0];
     }
 
 }
