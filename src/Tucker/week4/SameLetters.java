@@ -9,6 +9,9 @@ public class SameLetters {
 
         System.out.println(sameLetters("How does this work with spaces", "does this How spaces work with"));
 
+        System.out.println("sameLetters(\"what's up, pu s'tahw\") = " + sameLetters("what's up",
+                "pu s'tahw"));
+
     }
 
     public static boolean sameLetters(String str1, String str2) {
