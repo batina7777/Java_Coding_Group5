@@ -30,9 +30,11 @@ public class ConcatArray {
         for(int i = 0, y = 0; i < merged.length; i++){
 
             if(i < arr1.length){ // i -> [0] less than arr1.length -> [0,0,0]
-                merged[i] = arr1[i]; // arr1 [1, 4, 5]   ->  merged [1,4,5,0,0,0,0]
+                merged[i] = arr1[i];
+                // arr1 [1, 4, 5]   ->  merged [1,4,5,0,0,0,0]
             } else {
-                merged[i] = arr2[y++]; // arr2 [8,12,5,9] -> merged [1,4,5,0,0,0,0] -> merged[1,4,5,8,12,5,9]
+                merged[i] = arr2[y++];
+                // arr2 [8,12,5,9] -> merged [1,4,5,0,0,0,0] -> merged[1,4,5,8,12,5,9], y++ post increment is increments by 1.
             }
 
         }
