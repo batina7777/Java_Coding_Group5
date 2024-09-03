@@ -25,7 +25,7 @@ public class List_RemoveNameAhmed {
         Iterator object and iterator() method that  iterates(повторять) through a collection of elements one by one. It is a part of the Java Collections Framework and is commonly used with collection classes like ArrayList, HashSet, LinkedList,
          */
 
-        // iterator is like a "pin" and hasNext() method ensures that the iterator has not yet reached the end of the collection
+        // iterator is like a "pin" and hasNext() boolean method return true, false ensures that the iterator has not yet reached the end of the collection
         while(iterator.hasNext()){
             if(iterator.next().equals("Ahmed")){ // next() method to retrieve the next element
                 iterator.remove();

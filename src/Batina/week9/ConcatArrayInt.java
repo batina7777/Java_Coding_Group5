@@ -21,6 +21,9 @@ public class ConcatArrayInt {
         System.out.println(Arrays.toString(concatArrays(arr1, arr2)));
         //Arrays.toString() print method prints string of array instead of hashcode.
 
+        int [] test = (concatArrays(arr1, arr2));
+
+
     }
     public static int[] concatArrays(int[] arr1, int[] arr2){
 
