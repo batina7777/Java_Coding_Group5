@@ -19,9 +19,9 @@ public class Array_concat2Arrays {
         /*
         String test
          */
-        String[] StringArr1 = {"Joe", "Mohammed", "Djuna", "Felipe"};
-        String[] StringArr2 = {"Mike", "Hans", "Lee"};
-        concat2ArraysString(StringArr1, StringArr2);
+      //  String[] StringArr1 = {"Joe", "Mohammed", "Djuna", "Felipe"};
+       // String[] StringArr2 = {"Mike", "Hans", "Lee"};
+       // concat2ArraysString(StringArr1, StringArr2);
 
 
     }
@@ -31,8 +31,23 @@ public class Array_concat2Arrays {
 
         int[] newArr = new int[length];
 
-        int index = 0;
-        // FIRST array into new array
+       // int index = 0; // Uncomment for the enhanced for-each loop
+        /*
+        Solving using the for-i loop
+         */
+        for (int i = 0; i < arr1.length; i++) {
+            newArr[i] = arr1[i];
+        }
+
+        for (int i = 0; i < arr2.length; i++) {
+            newArr[i+arr1.length] = arr2[i];
+        }
+
+        /*
+        Solving using the enhanced for each loop
+         */
+
+     /*   // FIRST array into new array
         for (int each : arr1){
             newArr[index] = each;
             index++;
@@ -42,7 +57,7 @@ public class Array_concat2Arrays {
         for (int each : arr2){
             newArr[index] = each;
             index++;
-        }
+        }*/
 
 
         System.out.println(Arrays.toString(newArr));

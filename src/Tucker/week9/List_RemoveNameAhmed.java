@@ -20,9 +20,18 @@ public class List_RemoveNameAhmed {
 
     }
 
+    /*
+    Remove Ahmed method
+     */
     public static List<String> removeAhmed(List<String> names){
           names.removeIf(name -> name.equals("Ahmed"));
 
         return names;
     }
+
+    /*
+    Another option is to use iterator
+     */
+
+
 }
